@@ -1,2 +1,13 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import Todo from "../lib/Todo.svelte";
+
+
+</script>
+<main>
+    <h3>Todo</h3>
+    <Todo/>
+</main>
+
+<style>
+
+</style>
