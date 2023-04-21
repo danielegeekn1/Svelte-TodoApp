@@ -15,4 +15,4 @@
     }
 </script>
 <input type="text" bind:value={newTodo}>
-<button on:click={addto}>add task in todo list</button>
+<button on:click={addto} >add task in todo list</button>

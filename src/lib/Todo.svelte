@@ -1,4 +1,5 @@
 <script>
+  import AddTodo from "./AddTodo.svelte";
   import TodoCounter from "./TodoCounter.svelte";
   import TodoList from "./TodoList.svelte";
 import { todos } from "./store";
@@ -7,6 +8,7 @@ import { todos } from "./store";
 <main>
     <h3>Todo list app</h3>
     <TodoCounter/>
+    <AddTodo/>
     <TodoList todoList={$todos}/>
 </main>
 
