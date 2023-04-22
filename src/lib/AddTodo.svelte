@@ -29,13 +29,13 @@
       })
     }
     const options = [{
-		value: 'green',
+		value: '1',
 		label: 'Bulbasaur',
 	}, {
-		value: 'red',
+		value: '2',
 		label: 'Charmander',
 	}, {
-		value: 'blue',
+		value: '3',
 		label: 'Squirtle',
 	}]
 </script>
