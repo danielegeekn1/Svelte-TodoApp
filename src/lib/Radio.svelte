@@ -8,13 +8,12 @@
     /**
    * @type {any}
    */
-     export let legend
+    export let legend
     export let fontSize = 16;
-	export let flexDirection = 'column'
+	  export let flexDirection = 'column'
     export let userSelected = options[0].value;
     const uniqueID = Math.floor(Math.random() * 100)
-    const slugify = (str = "") =>
-    str.toLowerCase().replace(/ /g, "-").replace(/\./g, "");
+    
 </script>
 <div role="radiogroup" id={`group-${uniqueID}`} 
 style="font-size:{fontSize}px; flex-direction:{flexDirection}" >
@@ -25,9 +24,8 @@ style="font-size:{fontSize}px; flex-direction:{flexDirection}" >
 <input
   class="sr-only"
   type="radio"
-  id={slugify(label)}
   bind:group={userSelected}
-  value={value} />
-<label for={slugify(label)}> {label} </label>
+  value={label} />
+<label for={label}> {value} </label>
 {/each}
 </div>

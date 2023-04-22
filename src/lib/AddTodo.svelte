@@ -19,6 +19,15 @@
             return old
         })
     }
+    function addOpt(){
+      todos.update((old)=>{
+        old.push({
+          title:radioValue,
+          done:false
+        })
+        return old
+      })
+    }
     const options = [{
 		value: 'green',
 		label: 'Bulbasaur',
@@ -36,3 +45,4 @@
 <p>
 {radioValue} is selected
 </p>
+<button on:click={addOpt}>add pokemon options in todolist </button>
